@@ -1,0 +1,11 @@
+#time-series-chart {
+    min-width: 310px;
+    height: 400px;
+    margin: 10 auto;
+}
+
+.column {
+    width: 50%;
+    height: 100%;
+};
+

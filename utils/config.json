@@ -1,0 +1,20 @@
+{
+  "basicConfig": {
+    "level": "DEBUG",
+    "format": "%(asctime)s %(name)-12s %(levelname)-8s %(message)s",
+    "datefmt": "%m-%d %H:%M",
+    "filename": "/tmp/app.log",
+    "filemode": "w"
+  },
+  "handlers": [
+    {
+      "type": "StreamHandler",
+      "level": "DEBUG",
+      "formatter": "%(name)-12s: %(levelname)-8s %(message)-4s"
+    },
+    {
+      "type": "QueueLogger",
+      "level": "DEBUG",
+      "formatter": "%(name)-12s: %(levelname)-8s %(message)-4s"
+    }]
+}

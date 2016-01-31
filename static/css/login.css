@@ -1,0 +1,79 @@
+.loginform-in {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #D6E5F5;
+    border-radius: 3px 3px 3px 3px;
+    margin: auto;
+    padding: 0;
+    width: 460px;
+}
+
+.loginform-in fieldset {
+    border-bottom: 1px solid #EFEFEF;
+    margin: 20px auto;
+    padding: 8px;
+    width: 87%;
+
+}
+
+#buttoncontainer{
+    padding: 8px;
+    float: right;
+    width: 250px;
+}
+
+.loginbutton {
+    background: -moz-linear-gradient(center top , #F1F1F1, #E0E0E0) repeat scroll 0 0 transparent;
+    border: 1px solid #A7A7A7;
+    border-radius: 3px 3px 3px 3px;
+    color: #444444;
+    cursor: pointer;
+    float: right;
+    font-family: "Helvetica Neue";
+    font-size: 13px;
+    font-weight: normal;
+    height: 29px;
+    letter-spacing: 1px;
+    width: auto;
+}
+
+.registerbutton{
+    background: -moz-linear-gradient(center top , #F1F1F1, #E0E0E0) repeat scroll 0 0 transparent;
+    border: 1px solid #A7A7A7;
+    border-radius: 3px 3px 3px 3px;
+    color: #444444;
+    cursor: pointer;
+    float: right;
+    font-family: "Helvetica Neue";
+    font-size: 13px;
+    font-weight: normal;
+    height: 29px;
+    letter-spacing: 1px;
+    width: 92px;
+}
+
+.loginform-in fieldset label {
+    color: #7D7D7D;
+    float: left;
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 0 0 8;
+    width: 140px;
+}
+
+.loginform-in fieldset input[type="text"], input[type="password"], fieldset submit {
+    border: 1px solid #CBC7C5;
+    border-radius: 3px 3px 3px 3px;
+    float: left;
+    height: 33px;
+    padding: 1px 1px 1px 3px;
+    width: 250px;
+}
+
+h1 { padding: 0px 0 0 29 }
+
+#buttonlist li {
+display: inline;
+list-style-type: none;
+padding-right: 20px;
+}

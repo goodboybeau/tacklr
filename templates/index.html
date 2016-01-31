@@ -1,0 +1,36 @@
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.3.7.js"></script>
+
+    <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha256.js"></script>
+
+    <link rel="stylesheet" href = {{ url_for('static', filename='css/login.css') }}  />
+    <script src={{ url_for('static', filename='js/global.js') }} ></script>
+    <script src={{ url_for('static', filename='js/new_page.js') }} ></script>
+
+    <title>Tacklr</title>
+</head>
+
+<body>
+<div class="loginform-in">
+<h1>User Login</h1>
+<fieldset class="loginform-in">
+<div class="err" id="add_err"></div>
+	{% from "_formhelpers.html" import render_field %}
+    <form action="/login" method="post">
+      <dl>
+        {{ render_field(form.email, class="fieldset label") }}
+        {{ render_field(form.password, class="fieldset label") }}
+      <p>
+          <div id="buttoncontainer">
+            <input class="loginbutton" type=submit value=Login >
+            <input class="loginbutton" type=button value="Hash Password" onclick="do_page_request('home')" >
+          </div>
+      </dl>
+    </form>
+</fieldset>
+</div>
+
+</body>
+</html>
